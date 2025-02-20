@@ -1,0 +1,111 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassava-Based Biodegradable Gloves</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cassava-Based Biodegradable Gloves</h1>
+            <p>Sustainable Innovation</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research & Data</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to the Future of Sustainability</h2>
+            <p>Our mission is to innovate with sustainable materials...</p>
+            <button id="more" onclick="learnMore()">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about" class="content">
+        <div class="container">
+            <h2>About the Project</h2>
+            <p>Our project focuses on creating biodegradable gloves from cassava starch, offering a sustainable alternative to traditional plastic gloves. This innovation supports SDG 9 by promoting industry innovation and environmental sustainability.</p>
+            <p>By utilizing cassava, a renewable resource, we aim to reduce the environmental impact of disposable gloves. Our gloves decompose naturally, minimizing waste and pollution. This project not only addresses the pressing issue of plastic waste but also encourages the adoption of sustainable practices across industries.</p>
+            <p>We are committed to fostering innovation and infrastructure development, aligning with global efforts to combat climate change and promote a healthier planet. Join us in our mission to revolutionize the glove industry with eco-friendly solutions.</p>
+        </div>
+    </section>
+
+    <section id="research" class="content">
+        <div class="container">
+            <h2>Research & Data</h2>
+            <div class="charts">
+                <canvas id="biodegradabilityChart" width="10" height="10"></canvas>
+                <canvas id="environmentalImpactChart" width="10" height="10"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="content">
+        <div class="container">
+            <h2>Gallery</h2>
+            <button id="viewToggle" class="view-toggle">Toggle View</button>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="Images/img1.jpg" alt="Sustainable product 1" class="slide active">
+                    <img src="Images/img2.jpg" alt="Sustainable product 2" class="slide">
+                    <img src="Images/img3.jpg" alt="Sustainable product 3" class="slide">
+                    <img src="Images/img4.jpg" alt="Sustainable product 4" class="slide">
+                    <img src="Images/img5.jpg" alt="Sustainable product 5" class="slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="content">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-members">
+                <div class="member">
+                    <h3>Abdulrahman Hasan</h3>
+                </div>
+                <div class="member">
+                    <h3>Rashid Yasser</h3>
+                </div>
+                <div class="member">
+                    <h3>Hani Abdulhadi</h3>
+                </div>
+                <div class="member">
+                    <h3>Yousif Khalid</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact-footer">
+        <div class="container">
+            <p>&copy; 2025 Cassava-Based Biodegradable Gloves</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

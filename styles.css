@@ -1,0 +1,251 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #2c3e50; /* Dark Slate Blue */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c; /* Complementary Red */
+
+    font-size: larger;
+    transition: 0.5s;
+}
+
+.hero {
+    background: #2ecc71; /* Vibrant Green */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background-color: #2ecc71; /* Vibrant Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #27ae60; /* Darker Green */
+}
+
+.content {
+    padding: 60px 0;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#biodegradabilityChart, #environmentalImpactChart{
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px;
+}
+
+#more, #submit, #viewToggle{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+    border: 2px solid #e74c3c;
+    border-radius: 25px;
+}
+
+/* Gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: static;
+    opacity: 1;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Slider styles */
+.slider-container {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.view-toggle {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Grid view styles */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.grid-view img {
+    width: 200px;  /* Set a fixed width */
+    height: 200px; /* Same as width to make it square */
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: static;
+    opacity: 1;
+
+    margin-right: 20px;
+}
+
+.grid-view img:hover {
+    transform: scale(1.05);
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.member {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+}
+
+.member h3 {
+    color: #2c3e50;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
