@@ -138,3 +138,28 @@ function initializeSlider() {
 window.addEventListener('load', initializeSlider);
 
 // ... existing code ...
+document.addEventListener('DOMContentLoaded', function() {
+    const brochurePage = document.getElementById('brochurePage');
+    const downArrow = document.getElementById('downArrow');
+    const upArrow = document.getElementById('upArrow');
+    let currentPage = 1;
+
+    function toggleBrochurePage() {
+        if (currentPage === 1) {
+            brochurePage.src = 'Images/2.png';
+            brochurePage.alt = 'Brochure Page 2';
+            downArrow.style.display = 'none';
+            upArrow.style.display = 'block';
+            currentPage = 2;
+        } else {
+            brochurePage.src = 'Images/1.png';
+            brochurePage.alt = 'Brochure Page 1';
+            downArrow.style.display = 'block';
+            upArrow.style.display = 'none';
+            currentPage = 1;
+        }
+    }
+
+    downArrow.addEventListener('click', toggleBrochurePage);
+    upArrow.addEventListener('click', toggleBrochurePage);
+});
